@@ -6,7 +6,7 @@ using namespace std;
 int search(int key) {
 
     int result = -1;
-    for (int i = 1; i * i <= key; i++) {
+    for (int i = 1; i * 2 <= key; i++) {
         result = i;
 
     }
