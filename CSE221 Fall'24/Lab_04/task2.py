@@ -22,7 +22,8 @@ with open("input2.txt", "r") as input:
     for i in range(m):
         arr = [int(i) for i in input.readline().strip().split()]
         u, v = arr
-        graph[u].append((v))
+        graph[u].append(v)
+        graph[v].append(u)
 
     # utilities.print_dict(graph)
 
