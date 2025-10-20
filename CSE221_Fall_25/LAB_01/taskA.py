@@ -1,15 +1,12 @@
-num = int(input())
-
-for i in range(num):
-    num = int(input())
-
-    if (num % 2 == 0):
-        print(f"{num} is an Even number.") 
+t = int(input())
+for i in range(t):
+    n = int(input())
+    if n % 2 == 0:
+        print(f"{n} is an Even number.")
     
     else:
-        print(f"{num} is an Odd number.")
-
-
+        print(f"{n} is an Odd number.")
+        
 
 
 
