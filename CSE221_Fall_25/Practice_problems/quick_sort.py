@@ -3,6 +3,8 @@ arr2 = [6, 8, 2, 9, 15, 0]
 
 def partition(arr, start, end):
 
+    index = (start + end) // 2
+    arr[index], arr[end] = arr[index], arr[end]
     pivot = arr[end]
     i = 0
     j = 0

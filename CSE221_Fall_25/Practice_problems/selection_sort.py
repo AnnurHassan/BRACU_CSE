@@ -17,9 +17,7 @@ def selection_sort(arr):
                 min = j
         
         if min != i:
-            temp = arr[i]
-            arr[i] = arr[min]
-            arr[min] = temp
+            arr[i], arr[min] = arr[min], arr[i]
             count += 1
         
     return arr, count
