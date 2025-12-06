@@ -30,14 +30,6 @@ if x + 1 <= n:
 if x + 1 <= n and y + 1 <= n:
     moves.append((x+1, y+1))
 
-
-# for i in range(len(moves)):
-#     for j in range(len(moves)-1):
-#         if moves[j][0] > moves[j+1][0]:
-#             moves[j], moves[j+1] = moves[j+1], moves[j]
-        
-#         elif moves[j][0] == moves[j+1][0] and moves[j][1] > moves[j+1][1]:
-#             moves[j], moves[j+1] = moves[j+1], moves[j]
 moves.sort()
 
 print(len(moves))
