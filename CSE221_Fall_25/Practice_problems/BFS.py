@@ -86,7 +86,7 @@ def BFS(graph, start, destination):
                 parent[edge] = vertex
 
                 if edge == destination:
-                    path = compile_path(start, destination, visited, parent)
+                    path = compile_path(start, destination, parent)
                     print(f"{start}", end = " --> ")
                     for i in path:
                         if i == destination:
@@ -99,7 +99,7 @@ def BFS(graph, start, destination):
                 queue.append(edge)
 
 
-def compile_path(start, destination, visited, parent):
+def compile_path(start, destination, parent):
     path = []
     while parent[destination] != -1:
         path.append(destination)
