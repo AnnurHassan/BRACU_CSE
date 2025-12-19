@@ -34,15 +34,12 @@ graph = {
 # def BFS(graph, start):
     
 #     visited = {}
+#     distance = {}
+#     parent = {}
+
 #     for i in graph:
 #         visited[i] = 0
-    
-#     distance = {}
-#     for i in graph:
 #         distance[i] = 0
-    
-#     parent = {}
-#     for i in graph:
 #         parent[i] = 0
     
 #     visited[start] = 1
@@ -71,11 +68,9 @@ graph = {
 def BFS(graph, start, destination):
     
     visited = {}
-    for i in graph:
-        visited[i] = 0
-    
     parent = {}
     for i in graph:
+        visited[i] = 0
         parent[i] = 0
     
     visited[start] = 1
