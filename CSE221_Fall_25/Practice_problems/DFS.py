@@ -1,4 +1,17 @@
-graph = {'A' : ['B', 'C'], 'B' : ['D', 'E', 'F'], 'C' : ['G'], 'D' : [], 'E' : [], 'F' : ['H'], 'G' : ['I'], 'H' : [], 'I' : []}
+from collections import deque
+
+
+graph = {
+        'r' : ['v', 's'], 
+        's' : ['w', 'r'], 
+        't' : ['w', 'x', 'u'], 
+        'u' : ['t', 'y'], 
+        'v' : ['r'], 
+        'w' : ['s', 't', 'x'], 
+        'x' : ['w', 't', 'y'], 
+        'y' : ['u', 'x'] 
+}
+
 
 def DFS(graph, start):
     visited = [start]
@@ -13,4 +26,4 @@ def DFS(graph, start):
                 visited.append(i)
                 stack.append(i)
 
-DFS(graph, 'A')
+DFS(graph, 's')
