@@ -1,7 +1,8 @@
 import sys
 import heapq
 
-n, m, s, d = map(int, sys.stdin.readline().strip().split())
+
+n, m, s,d = map(int, sys.stdin.readline().strip().split())
 
 graph = {}
 for i in range(n):
